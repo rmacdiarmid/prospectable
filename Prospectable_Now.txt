@@ -1,0 +1,2 @@
+alert (Hello Money)
+alert (1+3)
