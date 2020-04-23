@@ -70,6 +70,7 @@ console.log(typeof ryanOlder);
 * Operator Precedence
 */
 
+/*
 var now = 2020;
 var yearRyan = 1980; 
 var fullAge = 21;
@@ -89,6 +90,68 @@ console.log(average);
 // Multiple assignments
 var x, y; 
 x = (3 + 5) * 4 - 6;
+
+//More opertators
+x = x + 2;
+x += 2;
+x = x +1;
+x += 1
+x++
+
+*/
+
+/************************
+CODING CHALLENGE 1
+*/
+
+/*
+var markBMI, johnBMI, markHeight, markMass, johnHeight, johnMass;
+
+markHeight = 72;
+markMass = 200;
+johnHeight = 70;
+johnMass = 185;
+
+markBMI = markMass / (markHeight * markHeight); 
+johnBMI = johnMass / (johnHeight * johnHeight);
+console.log(markBMI, johnBMI);
+
+var ishigherBMI
+ishigherBMI = markBMI >= johnBMI
+
+console.log('Is Marks BMI higher than Johns?' + " " + ishigherBMI);
+
+
+*/
+
+/********************
+*If / else Statements
+*/
+/*
+var firstName = 'Ryan';
+var civilStatus = 'married';
+
+if (civilStatus === 'married') {
+    console.log(firstName + ' is married!');
+    } 
+    else {
+    console.log(firstName + ' will hopefully marry soon:)');
+}
+*/
+/********
+* Boolean logic
+*/
+
+var firstName = 'John';
+var age = 16;
+
+if (age < 13) {
+    console.log(firstName + ' is a boy.');
+} else if (age >= 13 && age < 20) {
+    console.log(firstName + ' is a teenager.')
+} else {
+    console.log(firstName + ' is a man.');
+}
 
 
 
