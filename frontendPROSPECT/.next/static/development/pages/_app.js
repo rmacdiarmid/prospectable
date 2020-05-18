@@ -207,7 +207,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Header */ "./components/Header.js");
-/* harmony import */ var _Meta__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Meta */ "./components/Meta.js");
+/* harmony import */ var _components_Meta__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Meta */ "./components/Meta.js");
 var _jsxFileName = "/Users/ryanmacdiarmid/Dropbox (Personal)/_github/prospectable/frontendPROSPECT/components/Page.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -252,7 +252,7 @@ function (_Component) {
           lineNumber: 8
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Meta__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Meta__WEBPACK_IMPORTED_MODULE_2__["default"], {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 9
@@ -8036,12 +8036,12 @@ module.exports = __webpack_require__(/*! ./dist/lib/link */ "./node_modules/next
 
 /***/ "./node_modules/object-assign/index.js":
 /*!***************************************************************************************************!*\
-  !*** delegated ./node_modules/object-assign/index.js from dll-reference dll_18682c416555df0bf0b9 ***!
+  !*** delegated ./node_modules/object-assign/index.js from dll-reference dll_945b6e8ae40327aa2846 ***!
   \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_18682c416555df0bf0b9 */ "dll-reference dll_18682c416555df0bf0b9"))("./node_modules/object-assign/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_945b6e8ae40327aa2846 */ "dll-reference dll_945b6e8ae40327aa2846"))("./node_modules/object-assign/index.js");
 
 /***/ }),
 
@@ -8684,12 +8684,12 @@ module.exports = exports['default'];
 
 /***/ "./node_modules/prop-types/checkPropTypes.js":
 /*!*********************************************************************************************************!*\
-  !*** delegated ./node_modules/prop-types/checkPropTypes.js from dll-reference dll_18682c416555df0bf0b9 ***!
+  !*** delegated ./node_modules/prop-types/checkPropTypes.js from dll-reference dll_945b6e8ae40327aa2846 ***!
   \*********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_18682c416555df0bf0b9 */ "dll-reference dll_18682c416555df0bf0b9"))("./node_modules/prop-types/checkPropTypes.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_945b6e8ae40327aa2846 */ "dll-reference dll_945b6e8ae40327aa2846"))("./node_modules/prop-types/checkPropTypes.js");
 
 /***/ }),
 
@@ -9297,12 +9297,12 @@ if (true) {
 
 /***/ "./node_modules/prop-types/lib/ReactPropTypesSecret.js":
 /*!*******************************************************************************************************************!*\
-  !*** delegated ./node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_18682c416555df0bf0b9 ***!
+  !*** delegated ./node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_945b6e8ae40327aa2846 ***!
   \*******************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_18682c416555df0bf0b9 */ "dll-reference dll_18682c416555df0bf0b9"))("./node_modules/prop-types/lib/ReactPropTypesSecret.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_945b6e8ae40327aa2846 */ "dll-reference dll_945b6e8ae40327aa2846"))("./node_modules/prop-types/lib/ReactPropTypesSecret.js");
 
 /***/ }),
 
@@ -9517,12 +9517,12 @@ exports.encode = exports.stringify = __webpack_require__(/*! ./encode */ "./node
 
 /***/ "./node_modules/react/index.js":
 /*!*******************************************************************************************!*\
-  !*** delegated ./node_modules/react/index.js from dll-reference dll_18682c416555df0bf0b9 ***!
+  !*** delegated ./node_modules/react/index.js from dll-reference dll_945b6e8ae40327aa2846 ***!
   \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_18682c416555df0bf0b9 */ "dll-reference dll_18682c416555df0bf0b9"))("./node_modules/react/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_945b6e8ae40327aa2846 */ "dll-reference dll_945b6e8ae40327aa2846"))("./node_modules/react/index.js");
 
 /***/ }),
 
@@ -11292,14 +11292,14 @@ return { page: module.exports.default }});
 
 /***/ }),
 
-/***/ "dll-reference dll_18682c416555df0bf0b9":
+/***/ "dll-reference dll_945b6e8ae40327aa2846":
 /*!*******************************************!*\
-  !*** external "dll_18682c416555df0bf0b9" ***!
+  !*** external "dll_945b6e8ae40327aa2846" ***!
   \*******************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = dll_18682c416555df0bf0b9;
+module.exports = dll_945b6e8ae40327aa2846;
 
 /***/ })
 
