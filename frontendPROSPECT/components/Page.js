@@ -3,22 +3,38 @@ import Header from './Header';
 import Meta from '../components/Meta';
 import styled from 'styled-components';
 
-const MyButton = styled.button`
+const theme = {
+    red: '#FF0000',
+    black: '#393939',
+    grey: '#3a3a3a',
+    lightgrey: '#E1E1E1',
+    offwhite: '#EDEDED',
+    maxWidth: '1000px',
+    bs: '0 12px 24px 0 rgba(0,0,0, 0.9)',
+};
+
+const StyledPage = styled.div`
+  background: white;
+  color: black;
+`;
+
+const Inner = styled.div`
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
   background: red;
-  font-size: 100px;
 `;
 
 class Page extends Component {
     render() {
         return (
-            <div>
+            <StyledPage>
             <Meta />
             <Header />
-            <MyButton>Click Me</MyButton>
-            <MyButton>Click Me</MyButton>
-            <MyButton>Click Me</MyButton>
-            {this.props.children}   
-            </div>
+            <Inner>
+            {this.props.children} 
+            </Inner>
+            </StyledPage>
         );
     }
 }
