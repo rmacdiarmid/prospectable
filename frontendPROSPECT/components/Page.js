@@ -21,6 +21,14 @@ const GlobalStyle = createGlobalStyle`
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+   font-family: 'Roboto';
+   src: url('/static/Open_Sans_Roboto/Roboto/Roboto-Medium.tff')
+   format('tff');
+   font-weight: normal;
+   font-style: normal;
+}
+
 html {
      box-sizing: border-box;
      font-size: 10px;
