@@ -12,7 +12,7 @@ const Logo = styled.h1`
   a {
     padding: 0.5rem 1rem;
     background: ${props => props.theme.red}; 
-    color: ${props => props.theme.offwhite};
+    color: ${props => props.theme.offWhite};
     text-transform: uppercase;
     text-decoration: none;
   }
@@ -20,10 +20,34 @@ const Logo = styled.h1`
     margin: 0;
     text-align: center;
 }
+
+.sub-bar {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    border-bottom: 1px solid ${props => props.theme.lightGrey};
+}
+
+`;
+
+const StyledHeader = styled.header`
+.bar {
+    border-bottom: 10px solid ${props => props.theme.black};
+    display: grid;
+    grid-template-columns: auto 1fr;
+    justify-content: space-between;
+    align-items: stretch;
+    @media (max-width: 1300px) {
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+}
+
+
+
 `;
 
 const Header = () => (
-    <div>
+    <StyledHeader>
         <div className="bar">
             <Logo>
               <Link href="/">
@@ -36,7 +60,7 @@ const Header = () => (
             <p>Search</p>
         </div>
         <div>ToCall</div>
-    </div>
+    </StyledHeader>
 );
 
 export default Header;

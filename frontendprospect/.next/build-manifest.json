@@ -27,10 +27,6 @@
     "/index": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
-    ],
-    "/scrape": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
     ]
   }
 }

@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
+import styled, { ThemeProvider, injectGlobal } from 'styled-components';
 import Header from './Header';
 import Meta from '../components/Meta';
-import styled, { ThemeProvider, injectGlobal } from 'styled-components';
 
 const theme = {
     red: '#FF0000',
     black: '#393939',
     grey: '#3a3a3a',
-    lightgrey: '#E1E1E1',
-    offwhite: '#EDEDED',
+    lightGrey: '#E1E1E1',
+    offWhite: '#EDEDED',
     maxWidth: '1000px',
     bs: '0 12px 24px 0 rgba(0,0,0, 0.9)',
 };
@@ -22,8 +22,22 @@ const Inner = styled.div`
   max-width: ${props => props.theme.maxWidth};
   margin: 0 auto;
   padding: 2rem;
-  background: ${props => props.theme.offwhite};
+  background: ${props => props.theme.offWhite};
 `;
+
+/* injectGlobal`
+  html {
+     box-sizing: border-box;
+     font-size: 10px;
+  }
+  *, *:before, *:after {
+      box-sizing: inherit;
+  }
+  body {
+      padding: 0;
+      margin: 0;
+  }
+`; */
 
 class Page extends Component {
     render() {
