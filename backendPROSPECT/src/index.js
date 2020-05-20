@@ -5,16 +5,14 @@ const db = require('./db');
 const server = createServer();
 
 // TODO use express middleware to handle cookies (JWT)
-// TODO use express middleware to populate furrent user
+// TODO use express middleware to populate current user
 
-server.start(
-  {
+server.start({
     cors: {
         credentials: true,
         origin: process.env.FRONTEND_URL,
     },
-  },
- deets => {
+}, 
+    deets => {
     console.log('Server is now running on Port http:/localhost:${deets.port}');
- }
-);
+ });

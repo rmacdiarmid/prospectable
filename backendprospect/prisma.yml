@@ -1,10 +1,6 @@
 endpoint: ${env:PRISMA_ENDPOINT}
-datamodel: datamodel.prisma
+datamodel: datamodel.graphql
 # secret: ${env:PRISMA_SECRET}
 hooks:
   post-deploy:
-    - graphql get-schema -o
-
-generate:
-  - generator: javascript-client
-    output: ./generated/prisma-client/
+    - graphql get-schema -p prisma
