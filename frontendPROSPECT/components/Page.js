@@ -28,7 +28,6 @@ const GlobalStyle = createGlobalStyle`
    font-weight: normal;
    font-style: normal;
 }
-
 html {
      box-sizing: border-box;
      font-size: 10px;
@@ -42,6 +41,10 @@ html {
       font-size: 1.5rem;
       line-height: 2;
       font-family: 'radnika_next';
+  }
+  a {
+      text-decoration: none;
+      color: ${props => props.theme.black};
   }
 `;
 
@@ -61,7 +64,7 @@ class Page extends Component {
     render() {
         return (
            <ThemeProvider theme={theme}>
-              <GlobalStyle></GlobalStyle>
+              <GlobalStyle />
               <StyledPage>
                 <Meta />
                 <Header />
