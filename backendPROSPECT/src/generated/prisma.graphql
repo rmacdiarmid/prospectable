@@ -1,5 +1,5 @@
 # source: https://us1.prisma.sh/ryan-macdiarmid/prospectable/dev
-# timestamp: Tue May 19 2020 20:29:53 GMT-0700 (Pacific Daylight Time)
+# timestamp: Thu May 21 2020 04:01:23 GMT-0700 (Pacific Daylight Time)
 
 type AggregateUser {
   count: Int!
@@ -72,6 +72,7 @@ type User implements Node {
   id: ID!
   name: String!
   email: String!
+  phone: Int!
 }
 
 """A connection to a list of items."""
@@ -88,6 +89,7 @@ input UserCreateInput {
   id: ID
   name: String!
   email: String!
+  phone: Int!
 }
 
 """An edge in a connection."""
@@ -106,12 +108,15 @@ enum UserOrderByInput {
   name_DESC
   email_ASC
   email_DESC
+  phone_ASC
+  phone_DESC
 }
 
 type UserPreviousValues {
   id: ID!
   name: String!
   email: String!
+  phone: Int!
 }
 
 type UserSubscriptionPayload {
@@ -156,11 +161,13 @@ input UserSubscriptionWhereInput {
 input UserUpdateInput {
   name: String
   email: String
+  phone: Int
 }
 
 input UserUpdateManyMutationInput {
   name: String
   email: String
+  phone: Int
 }
 
 input UserWhereInput {
@@ -292,6 +299,28 @@ input UserWhereInput {
 
   """All values not ending with the given string."""
   email_not_ends_with: String
+  phone: Int
+
+  """All values that are not equal to given value."""
+  phone_not: Int
+
+  """All values that are contained in given list."""
+  phone_in: [Int!]
+
+  """All values that are not contained in given list."""
+  phone_not_in: [Int!]
+
+  """All values less than the given value."""
+  phone_lt: Int
+
+  """All values less than or equal the given value."""
+  phone_lte: Int
+
+  """All values greater than the given value."""
+  phone_gt: Int
+
+  """All values greater than or equal the given value."""
+  phone_gte: Int
 }
 
 input UserWhereUniqueInput {
