@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styled, { createGlobalStyle, ThemeProvider } from 'styled-components';
 import Header from './Header';
 import Meta from '../components/Meta';
+import CallLog from './CallLog';
 
 const theme = {
     red: '#FF0000',
@@ -70,6 +71,7 @@ class Page extends Component {
                 <Header />
                 <Inner>{this.props.children} 
                 </Inner>
+                <CallLog></CallLog>
               </StyledPage>
             </ThemeProvider>
         );
