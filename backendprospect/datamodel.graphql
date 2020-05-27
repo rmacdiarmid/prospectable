@@ -4,3 +4,15 @@ type User {
   email: String!
   phone: Int!
 }
+
+type Item {
+  id: ID! @id
+  title: String!
+  description: String!
+  image: String
+  largeImage: String
+  price: Int!
+  createAt: DateTime!
+  updatedAt: DateTime!
+  # user: User!
+}
