@@ -1,18 +1,19 @@
 import React from "react";
 
-class CallLog extends React.Component {
+class callLog extends React.Component {
     render () {
-        <div className="CallLog">
-            <H2>Call Log</H2>
-            <form>
-                <p>It Works</p>
-            </form>
-        </div>
-        );
+        return (
+            <div className="callLog">
+                <h2>Call Log</h2>
+                <form>
+                 <p>It Works</p>
+                </form>
+            </div>
+        )
     }
 };
 
-export default CallLog;
+export default callLog;
 
 
 

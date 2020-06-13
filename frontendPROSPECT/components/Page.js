@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import styled, { createGlobalStyle, ThemeProvider } from 'styled-components';
 import Header from './Header';
-import Meta from '../components/Meta';
-import CallLog from './CallLog';
+import Meta from './Meta';
+//import callLog from '../components/callLog.js';
 
 const theme = {
     red: '#FF0000',
@@ -69,13 +69,11 @@ class Page extends Component {
               <StyledPage>
                 <Meta />
                 <Header />
-                <Inner>{this.props.children} 
-                </Inner>
-                <CallLog></CallLog>
+                  <Inner>{this.props.children}</Inner>
               </StyledPage>
             </ThemeProvider>
         );
     }
-}
+};
 
 export default Page;
