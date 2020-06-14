@@ -1,6 +1,8 @@
+import CreateItem from '../components/CreateItem';
+
 const create = props => (
     <div>
-        <p>Input!</p>
+        <CreateItem />
     </div>
 ); 
 
