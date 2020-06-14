@@ -1,10 +1,10 @@
 import Link from 'next/link';
 
-const Scrape = props => (
+const scrape = props => (
     <div>
-        <Link href="/scrape">scrape</Link>
+        <Link href="/scrape"></Link>
         <p>Scrape THIS!!!</p>
     </div>
 ); 
 
-export default Scrape;
+export default scrape;
