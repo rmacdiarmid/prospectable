@@ -6,8 +6,8 @@ const Nav = () => (
         <Link href="/items">
           <a>Properties</a>
         </Link>
-        <Link href="/scrape">
-          <a>Scrape</a>
+        <Link href="/create">
+          <a>Create</a>
         </Link>
         <Link href="/scrub">
           <a>Scrub</a>
