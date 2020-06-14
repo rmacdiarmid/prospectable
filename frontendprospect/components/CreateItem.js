@@ -8,8 +8,8 @@ class CreateItem extends Component {
     state = {
         title: '122 Main St. Loomis, CA',
         description: 'Industrial Property with 8 units',
-        image: '',
-        largeImage: '',
+        image: 'property.jpg',
+        largeImage: 'large_property.jpg',
         amount: 25000000,
     };
     handleChange = e => {
