@@ -6,12 +6,12 @@ import formatMoney from '../lib/formatMoney';
 
 class CreateItem extends Component {
     state = {
-        title: '',
-        description: '',
+        title: '122 Main St. Loomis, CA',
+        description: 'Industrial Property with 8 units',
         image: '',
         largeImage: '',
-        amount: 0,
-    }
+        amount: 25000000,
+    };
     handleChange = e => {
         const { name, type, value } = e.target;
         const val = type ==='number' ? parseFloat(value) : value;
@@ -20,7 +20,11 @@ class CreateItem extends Component {
 
     render() {
         return (
-            <Form>
+            <Form onSubmit={(e) => {
+                e.preventDefault();
+                console.log(this.state);
+                }}
+            >
                 <fieldset>
                     <label htmlFor="title">
                         Title
@@ -59,6 +63,7 @@ class CreateItem extends Component {
                             onChange={this.handleChange}
                         />
                     </label>
+                    <button type="submit">Submit</button>
                 </fieldset>
             </Form>
         );
