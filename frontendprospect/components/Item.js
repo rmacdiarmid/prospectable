@@ -7,7 +7,7 @@ import PriceTag from './styles/PriceTag';
 
 class Item extends Component {
     render() {
-        const item = this.props;
+        const { item } = this.props;
         return (
             <ItemStyles>
                 <Title>{item.title}</Title>
