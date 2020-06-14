@@ -3,8 +3,8 @@ import NavStyles from '../components/styles/NavStyles';
 
 const Nav = () => (
     <NavStyles>
-        <Link href="/">
-          <a>Home</a>
+        <Link href="/items">
+          <a>Properties</a>
         </Link>
         <Link href="/scrape">
           <a>Scrape</a>
