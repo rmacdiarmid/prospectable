@@ -10,20 +10,53 @@ class CreateItem extends Component {
         description: '',
         image: '',
         largeImage: '',
-        price: 0,
+        amount: 0,
     }
+    handleChange = e => {
+        const { name, type, value } = e.target;
+        const val = type ==='number' ? parseFloat(value) : value;
+        this.setState({ [name]: val });
+    }
+
     render() {
         return (
             <Form>
                 <fieldset>
-                    <label htmlfor="title">
+                    <label htmlFor="title">
                         Title
                         <input 
                             type="text" 
                             id="title" 
                             name="title" 
                             placeholder="Title" 
-                            required value={this.state.title}
+                            required 
+                            value={this.state.title}
+                            onChange={this.handleChange}
+                        />
+                    </label>
+
+                    <label htmlFor="amount">
+                        Amount
+                        <input 
+                            type="number" 
+                            id="amount" 
+                            name="amount" 
+                            placeholder="Amount" 
+                            required 
+                            value={this.state.amount}
+                            onChange={this.handleChange}
+                        />
+                    </label>
+
+                    <label htmlFor="description">
+                        Description
+                        <textarea
+                            id="description" 
+                            name="description" 
+                            placeholder="Enter A Description" 
+                            required 
+                            value={this.state.description}
+                            onChange={this.handleChange}
                         />
                     </label>
                 </fieldset>
