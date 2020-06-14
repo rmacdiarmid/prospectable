@@ -11,6 +11,7 @@ const theme = {
     lightGrey: '#E1E1E1',
     offWhite: '#EDEDED',
     maxWidth: '1000px',
+    white: '#FFF',
     bs: '0 12px 24px 0 rgba(0,0,0, 0.9)',
 };
 
@@ -39,7 +40,7 @@ html {
   body {
       padding: 0;
       margin: 0;
-      font-size: 1rem;
+      font-size: 1.5rem;
       line-height: 2;
       font-family: 'radnika_next';
   }
@@ -58,7 +59,7 @@ const Inner = styled.div`
   max-width: ${props => props.theme.maxWidth};
   margin: 0 auto;
   padding: 2rem;
-  background: ${props => props.theme.offWhite};
+  background: ${props => props.theme.white};
 `;
 
 class Page extends Component {
