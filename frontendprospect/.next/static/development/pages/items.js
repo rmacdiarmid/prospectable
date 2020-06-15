@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/index.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/items.js"],{
 
 /***/ "./components/Item.js":
 /*!****************************!*\
@@ -1726,14 +1726,14 @@ eval("var assign=Object.assign.bind(Object);function g(){return assign;}Object.d
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fryanmacdiarmid%2FDropbox%20(Personal)%2F_github%2Fprospectable%2Ffrontendprospect%2Fpages%2Findex.js!./":
-/*!****************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fryanmacdiarmid%2FDropbox%20(Personal)%2F_github%2Fprospectable%2Ffrontendprospect%2Fpages%2Findex.js ***!
-  \****************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fitems&absolutePagePath=%2FUsers%2Fryanmacdiarmid%2FDropbox%20(Personal)%2F_github%2Fprospectable%2Ffrontendprospect%2Fpages%2Fitems.js!./":
+/*!*********************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fitems&absolutePagePath=%2FUsers%2Fryanmacdiarmid%2FDropbox%20(Personal)%2F_github%2Fprospectable%2Ffrontendprospect%2Fpages%2Fitems.js ***!
+  \*********************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("\n    (window.__NEXT_P = window.__NEXT_P || []).push([\n      \"/\",\n      function () {\n        return __webpack_require__(/*! ./pages/index.js */ \"./pages/index.js\");\n      }\n    ]);\n  //# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9ub2RlX21vZHVsZXMvbmV4dC9kaXN0L2J1aWxkL3dlYnBhY2svbG9hZGVycy9uZXh0LWNsaWVudC1wYWdlcy1sb2FkZXIuanM/YjkzOSJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBQ0E7QUFDQTtBQUNBO0FBQ0EsZUFBZSxtQkFBTyxDQUFDLDBDQUErRjtBQUN0SDtBQUNBIiwiZmlsZSI6Ii4vbm9kZV9tb2R1bGVzL25leHQvZGlzdC9idWlsZC93ZWJwYWNrL2xvYWRlcnMvbmV4dC1jbGllbnQtcGFnZXMtbG9hZGVyLmpzP3BhZ2U9JTJGJmFic29sdXRlUGFnZVBhdGg9JTJGVXNlcnMlMkZyeWFubWFjZGlhcm1pZCUyRkRyb3Bib3glMjAoUGVyc29uYWwpJTJGX2dpdGh1YiUyRnByb3NwZWN0YWJsZSUyRmZyb250ZW5kcHJvc3BlY3QlMkZwYWdlcyUyRmluZGV4LmpzIS4vLmpzIiwic291cmNlc0NvbnRlbnQiOlsiXG4gICAgKHdpbmRvdy5fX05FWFRfUCA9IHdpbmRvdy5fX05FWFRfUCB8fCBbXSkucHVzaChbXG4gICAgICBcIi9cIixcbiAgICAgIGZ1bmN0aW9uICgpIHtcbiAgICAgICAgcmV0dXJuIHJlcXVpcmUoXCIvVXNlcnMvcnlhbm1hY2RpYXJtaWQvRHJvcGJveCAoUGVyc29uYWwpL19naXRodWIvcHJvc3BlY3RhYmxlL2Zyb250ZW5kcHJvc3BlY3QvcGFnZXMvaW5kZXguanNcIik7XG4gICAgICB9XG4gICAgXSk7XG4gICJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fryanmacdiarmid%2FDropbox%20(Personal)%2F_github%2Fprospectable%2Ffrontendprospect%2Fpages%2Findex.js!./\n");
+eval("\n    (window.__NEXT_P = window.__NEXT_P || []).push([\n      \"/items\",\n      function () {\n        return __webpack_require__(/*! ./pages/items.js */ \"./pages/items.js\");\n      }\n    ]);\n  //# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9ub2RlX21vZHVsZXMvbmV4dC9kaXN0L2J1aWxkL3dlYnBhY2svbG9hZGVycy9uZXh0LWNsaWVudC1wYWdlcy1sb2FkZXIuanM/NTAyZCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBQ0E7QUFDQTtBQUNBO0FBQ0EsZUFBZSxtQkFBTyxDQUFDLDBDQUErRjtBQUN0SDtBQUNBIiwiZmlsZSI6Ii4vbm9kZV9tb2R1bGVzL25leHQvZGlzdC9idWlsZC93ZWJwYWNrL2xvYWRlcnMvbmV4dC1jbGllbnQtcGFnZXMtbG9hZGVyLmpzP3BhZ2U9JTJGaXRlbXMmYWJzb2x1dGVQYWdlUGF0aD0lMkZVc2VycyUyRnJ5YW5tYWNkaWFybWlkJTJGRHJvcGJveCUyMChQZXJzb25hbCklMkZfZ2l0aHViJTJGcHJvc3BlY3RhYmxlJTJGZnJvbnRlbmRwcm9zcGVjdCUyRnBhZ2VzJTJGaXRlbXMuanMhLi8uanMiLCJzb3VyY2VzQ29udGVudCI6WyJcbiAgICAod2luZG93Ll9fTkVYVF9QID0gd2luZG93Ll9fTkVYVF9QIHx8IFtdKS5wdXNoKFtcbiAgICAgIFwiL2l0ZW1zXCIsXG4gICAgICBmdW5jdGlvbiAoKSB7XG4gICAgICAgIHJldHVybiByZXF1aXJlKFwiL1VzZXJzL3J5YW5tYWNkaWFybWlkL0Ryb3Bib3ggKFBlcnNvbmFsKS9fZ2l0aHViL3Byb3NwZWN0YWJsZS9mcm9udGVuZHByb3NwZWN0L3BhZ2VzL2l0ZW1zLmpzXCIpO1xuICAgICAgfVxuICAgIF0pO1xuICAiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fitems&absolutePagePath=%2FUsers%2Fryanmacdiarmid%2FDropbox%20(Personal)%2F_github%2Fprospectable%2Ffrontendprospect%2Fpages%2Fitems.js!./\n");
 
 /***/ }),
 
@@ -2261,14 +2261,26 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* WEBPACK VAR INJECTION */(f
 
 /***/ }),
 
-/***/ 3:
-/*!********************************************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fryanmacdiarmid%2FDropbox%20(Personal)%2F_github%2Fprospectable%2Ffrontendprospect%2Fpages%2Findex.js ***!
-  \********************************************************************************************************************************************************************************/
+/***/ "./pages/items.js":
+/*!************************!*\
+  !*** ./pages/items.js ***!
+  \************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var _index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index */ \"./pages/index.js\");\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (_index__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\n\n;\n    var _a, _b;\n    // Legacy CSS implementations will `eval` browser code in a Node.js context\n    // to extract CSS. For backwards compatibility, we need to check we're in a\n    // browser context before continuing.\n    if (typeof self !== 'undefined' &&\n        // AMP / No-JS mode does not inject these helpers:\n        '$RefreshHelpers$' in self) {\n        var currentExports_1 = module.__proto__.exports;\n        var prevExports = (_b = (_a = module.hot.data) === null || _a === void 0 ? void 0 : _a.prevExports) !== null && _b !== void 0 ? _b : null;\n        // This cannot happen in MainTemplate because the exports mismatch between\n        // templating and execution.\n        self.$RefreshHelpers$.registerExportsForReactRefresh(currentExports_1, module.i);\n        // A module can be accepted automatically based on its exports, e.g. when\n        // it is a Refresh Boundary.\n        if (self.$RefreshHelpers$.isReactRefreshBoundary(currentExports_1)) {\n            // Save the previous exports on update so we can compare the boundary\n            // signatures.\n            module.hot.dispose(function (data) {\n                data.prevExports = currentExports_1;\n            });\n            // Unconditionally accept an update to this module, we'll check if it's\n            // still a Refresh Boundary later.\n            module.hot.accept();\n            // This field is set when the previous version of this module was a\n            // Refresh Boundary, letting us know we need to check for invalidation or\n            // enqueue an update.\n            if (prevExports !== null) {\n                // A boundary can become ineligible if its exports are incompatible\n                // with the previous exports.\n                //\n                // For example, if you add/remove/change exports, we'll want to\n                // re-execute the importing modules, and force those components to\n                // re-render. Similarly, if you convert a class component to a\n                // function, we want to invalidate the boundary.\n                if (self.$RefreshHelpers$.shouldInvalidateReactRefreshBoundary(prevExports, currentExports_1)) {\n                    module.hot.invalidate();\n                }\n                else {\n                    self.$RefreshHelpers$.scheduleUpdate();\n                }\n            }\n        }\n        else {\n            // Since we just executed the code for the module, it's possible that the\n            // new exports made it ineligible for being a boundary.\n            // We only care about the case when we were _previously_ a boundary,\n            // because we already accepted this update (accidental side effect).\n            var isNoLongerABoundary = prevExports !== null;\n            if (isNoLongerABoundary) {\n                module.hot.invalidate();\n            }\n        }\n    }\n\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../node_modules/webpack/buildin/harmony-module.js */ \"./node_modules/webpack/buildin/harmony-module.js\")(module)))//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9wYWdlcy9pdGVtcy5qcz8xOGJlIl0sIm5hbWVzIjpbIkhvbWUiXSwibWFwcGluZ3MiOiJBQUFBO0FBQUE7QUFBQTtBQUVlQSw2R0FBZiIsImZpbGUiOiIuL3BhZ2VzL2l0ZW1zLmpzLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IEhvbWUgZnJvbSAnLi9pbmRleCc7XG5cbmV4cG9ydCBkZWZhdWx0IEhvbWU7Il0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./pages/items.js\n");
+
+/***/ }),
+
+/***/ 1:
+/*!*************************************************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fitems&absolutePagePath=%2FUsers%2Fryanmacdiarmid%2FDropbox%20(Personal)%2F_github%2Fprospectable%2Ffrontendprospect%2Fpages%2Fitems.js ***!
+  \*************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fryanmacdiarmid%2FDropbox%20(Personal)%2F_github%2Fprospectable%2Ffrontendprospect%2Fpages%2Findex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fryanmacdiarmid%2FDropbox%20(Personal)%2F_github%2Fprospectable%2Ffrontendprospect%2Fpages%2Findex.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fitems&absolutePagePath=%2FUsers%2Fryanmacdiarmid%2FDropbox%20(Personal)%2F_github%2Fprospectable%2Ffrontendprospect%2Fpages%2Fitems.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fitems&absolutePagePath=%2FUsers%2Fryanmacdiarmid%2FDropbox%20(Personal)%2F_github%2Fprospectable%2Ffrontendprospect%2Fpages%2Fitems.js!./");
 
 
 /***/ }),
@@ -2284,4 +2296,4 @@ eval("module.exports = dll_da3f1c4a0087612e6f46;//# sourceURL=[module]\n//# sour
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
