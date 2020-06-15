@@ -44,15 +44,17 @@ class CreateItem extends Component {
     render() {
         return (
             <Mutation mutation={CREATE_ITEM_MUTATION} variables={this.state}>
-                {(createItem, { loading, error}) => (
+                {(createItem, { loading, error }) => (
 
-            <Form onSubmit={(e) => {
-                e.preventDefault();
-                console.log(this.state);
+            <Form 
+                onSubmit={async e => {
+                    e.preventDefault();
+                    const res = await createItem();
+                    console.log(res);
                 }}
             >
                 <Error error={error} />
-                <fieldset>
+                <fieldset disabled={loading} aria-busy={loading}>
                     <label htmlFor="title">
                         Title
                         <input 
