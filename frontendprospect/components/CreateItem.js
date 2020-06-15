@@ -10,14 +10,14 @@ const CREATE_ITEM_MUTATION = gql`
     mutation CREATE_ITEM_MUTATION (
         $title: String!
         $description: String!
-        $amount: Int!
+        $price: Int!
         $image: String
         $largeImage: String
     )   {
         createItem(
             title: $title
             description: $description
-            amount: $amount
+            price: $price
             image: $image
             largeImage: $largeImage
         ) {
@@ -33,7 +33,7 @@ class CreateItem extends Component {
         description: 'Industrial Property with 8 units',
         image: 'property.jpg',
         largeImage: 'large_property.jpg',
-        amount: 25000000,
+        price: 25000000,
     };
     handleChange = e => {
         const { name, type, value } = e.target;
@@ -68,13 +68,13 @@ class CreateItem extends Component {
                         />
                     </label>
 
-                    <label htmlFor="amount">
+                    <label htmlFor="price">
                         Amount
                         <input 
                             type="number" 
-                            id="amount" 
-                            name="amount" 
-                            placeholder="Amount" 
+                            id="price" 
+                            name="price" 
+                            placeholder="price" 
                             required 
                             value={this.state.amount}
                             onChange={this.handleChange}

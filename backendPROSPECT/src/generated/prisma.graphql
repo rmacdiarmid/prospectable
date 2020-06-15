@@ -20,7 +20,7 @@ type Item implements Node {
   description: String!
   image: String
   largeImage: String
-  amount: Int!
+  price: Int!
 }
 
 """A connection to a list of items."""
@@ -39,7 +39,7 @@ input ItemCreateInput {
   description: String!
   image: String
   largeImage: String
-  amount: Int!
+  price: Int!
 }
 
 """An edge in a connection."""
@@ -72,7 +72,7 @@ type ItemPreviousValues {
   description: String!
   image: String
   largeImage: String
-  amount: Int!
+  price: Int!
 }
 
 type ItemSubscriptionPayload {
@@ -119,7 +119,7 @@ input ItemUpdateInput {
   description: String
   image: String
   largeImage: String
-  amount: Int
+  price: Int
 }
 
 input ItemUpdateManyMutationInput {
@@ -127,7 +127,7 @@ input ItemUpdateManyMutationInput {
   description: String
   image: String
   largeImage: String
-  amount: Int
+  price: Int
 }
 
 input ItemWhereInput {

@@ -9,7 +9,7 @@ const ALL_ITEMS_QUERY = gql`
         items {
             id
             title
-            amount
+            price
             description
             image
             largeImage
