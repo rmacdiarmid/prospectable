@@ -42,8 +42,25 @@ class CreateItem extends Component {
         this.setState({ [name]: val });
     }
 
-    uploadFile = (e) => {
+    uploadFile = async e => {
         console.log('uploading file...');
+        const files = e.target.files;
+        const data = new FormData();
+        data.append('file', files[0]);
+        data.append('upload_preset', 'prospectable');
+
+        const res = await fetch
+        ('https://api.cloudinary.com/v1_1/macdiarmid-enterprises/image/upload', {
+            method: 'POST',
+            body: data
+        });
+        const file = await res.json();
+        console.log(file);
+        this.setState({
+            image: file.secure_url,
+            largeImage: file.eager[0].secure_url
+
+        })
     };
 
 
