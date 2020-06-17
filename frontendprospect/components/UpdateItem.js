@@ -6,9 +6,18 @@ import Form from './styles/Form';
 import formatMoney from '../lib/formatMoney';
 import Error from './ErrorMessage';
 
-
+const SINGLE_ITEM_QUERY = gql`
+    query SINGLE_ITEM_QUERY($id: ID!) {
+        item(where: { id: $id }) {
+            id
+            title
+            description
+            price
+        }
+    }
+`;
 const UPDATE_ITEM_MUTATION = gql`
-    mutation UPDATE_ITEM_MUTATION (
+    mutation UPDATE_ITEM_MUTATION(
         $title: String!
         $description: String!
         $price: Int!
@@ -40,35 +49,39 @@ class UpdateItem extends Component {
         const { name, type, value } = e.target;
         const val = type ==='number' ? parseFloat(value) : value;
         this.setState({ [name]: val });
-    }
-
-
+    };
 
     render() {
         return (
-            <Mutation mutation={UPDATE_ITEM_MUTATION} variables={this.state}>
-                {(createItem, { loading, error }) => (
+            <Query query={SINGLE_ITEM_QUERY} variables={{ 
+                id: this.props.id 
+            }}>
+                {({data, loading}) => {
+                if (loading) return <p>Loading...</p>;
+                return(    
+                 <Mutation mutation={UPDATE_ITEM_MUTATION} variables={this.state}>
+                     {(createItem, { loading, error }) => (
 
-            <Form 
-                onSubmit={async e => {
-                    //Stop the form from submitting
-                    e.preventDefault();
-                    // call the mutation
-                    const res = await createItem();
-                    // change them to the single item page
-                    console.log(res);
-                    Router.push({
-                        pathname: '/item',
-                        query: { id: res.data.createItem.id },
-                    });
-                }}
-            >
-                <Error error={error} />
-                <fieldset disabled={loading} aria-busy={loading}>
+                    <Form 
+                         onSubmit={async e => {
+                        //Stop the form from submitting
+                         e.preventDefault();
+                        // call the mutation
+                        const res = await createItem();
+                        // change them to the single item page
+                        console.log(res);
+                        Router.push({
+                            pathname: '/item',
+                            query: { id: res.data.createItem.id },
+                        });
+                    }}
+                    >
+                    <Error error={error} />
+                    <fieldset disabled={loading} aria-busy={loading}>
         
-                    <label htmlFor="title">
-                        Title
-                        <input 
+                        <label htmlFor="title">
+                         Title
+                         <input 
                             type="text" 
                             id="title" 
                             name="title" 
@@ -105,9 +118,12 @@ class UpdateItem extends Component {
                     </label>
                     <button type="submit">Submit</button>
                 </fieldset>
-            </Form>
-          )}
-        </Mutation>
+              </Form>
+            )}
+           </Mutation>
+          )
+        }}
+        </Query>
       );
     }
 }
