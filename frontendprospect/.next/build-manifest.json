@@ -20,11 +20,11 @@
     "/_polyfills": [
       "static/runtime/polyfills.js"
     ],
-    "/items": [
+    "/item": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/update": [
+    "/items": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]

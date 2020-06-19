@@ -37,7 +37,7 @@ class Item extends Component {
                         <a>Edit</a>
                     </Link>
                     <button>Add to Call List</button>
-                    <DeleteItem id={item.id}>Delete It Bro</DeleteItem>
+                    <DeleteItem>Delete It Bro</DeleteItem>
                 </div>
             </ItemStyles>
         );
