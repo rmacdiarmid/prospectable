@@ -36,7 +36,7 @@ const Mutations = {
         // TODO
         // 3. Delete it!
         return ctx.db.mutation.deleteItem({ where }, info);
-    }
+    },
 };
 
 module.exports = Mutations;
