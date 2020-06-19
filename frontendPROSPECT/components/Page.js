@@ -18,14 +18,14 @@ const theme = {
 const GlobalStyle = createGlobalStyle`
 @font-face {
     font-family: 'radnika_next';
-    src: url('/static/radnikanext-medium-webfont.woff2')
+    src: url('/radnikanext-medium-webfont.woff2')
     format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
    font-family: 'Roboto';
-   src: url('/static/Open_Sans_Roboto/Roboto/Roboto-Medium.tff')
+   src: url('/Open_Sans_Roboto/Roboto/Roboto-Medium.tff')
    format('tff');
    font-weight: normal;
    font-style: normal;
