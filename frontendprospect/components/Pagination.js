@@ -17,7 +17,7 @@ const PAGINATION_QUERY = gql`
 
 const Pagination = props => (
     
-        <Query query= {PAGINATION_QUERY}>
+        <Query query={PAGINATION_QUERY}>
             {({ data, loading, error }) => {
                 if (loading) return <p>Loading...</p>;
                 const count = data.itemsConnection.aggregate.count;
@@ -28,7 +28,7 @@ const Pagination = props => (
                             <title>Prospectable</title>
                         </Head>
                         <p>
-                        Page {props.page} of {pages}!
+                        Page {props.page} of {pages}
                         </p>
                     </PaginationStyles>
                 );
