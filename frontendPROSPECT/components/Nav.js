@@ -18,8 +18,8 @@ const Nav = () => (
         <Link href="/Call">
           <a>Call</a>
         </Link>
-        <Link href="/share">
-          <a>Share</a>
+        <Link href="/signup">
+          <a>Sign Up</a>
         </Link>
     </NavStyles>
 );
