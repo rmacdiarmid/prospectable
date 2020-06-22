@@ -1,8 +1,12 @@
 import CreateItem from '../components/CreateItem';
+import PleaseSignIn from '../components/PleaseSignIn';
+
 
 const create = props => (
     <div>
+      <PleaseSignIn>
         <CreateItem />
+      </PleaseSignIn>
     </div>
 ); 
 
