@@ -12,6 +12,12 @@ const Mutations = {
         const item = await ctx.db.mutation.createItem(
             {
                 data: {
+                   // This is how to create a relationship between the object and the user. 
+                  user: {
+                      connect: {
+                          id: ctx.request.userId
+                      },
+                  },   
                 ...args,
                 },
             }, 
