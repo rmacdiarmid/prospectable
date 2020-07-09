@@ -11,7 +11,7 @@ const possiblePermissions = [
     'ITEMCREATE',
     'ITEMUPDATE',
     'ITEMDELETE',
-    'PERMISSIONPUPDATE',
+    'PERMISSIONUPDATE',
 ];
 
 const UPDAGE_PERMISSION_MUTATION = gql`
@@ -48,15 +48,13 @@ const Permissions = (props) => (
                   <Table>
                       <thead>
                           <tr>
-                              <th>Name</th>
-                              <th>Email</th>
-                              {possiblePermissions.map(permission => 
-                              <th key={permission}>{permission}</th>)}
-                              <th>👇</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            {possiblePermissions.map(permission => <th>{permission}</th>)}
+                            <th>👇🏻</th>
                           </tr>
                       </thead>
                       <tbody>
-                        {data.users.map(user => <UserPermissions user={user} key={user.id} />)}
                       </tbody>
                   </Table>
               </div>

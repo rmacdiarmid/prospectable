@@ -27,3 +27,121 @@ type Item {
   price: Int!
   user: User!
 }
+
+type Property {
+  id: ID! @id
+  street: String!
+  city: String!
+  state: String!
+  zip: Int!
+  description: String
+  situation: [Situation] @scalarList(strategy: RELATION)
+  owner: [Owner] 
+  ownerEntity: Business
+}
+
+enum Situation {
+  REFINANCE
+  PURCHASE
+}
+
+interface Individual {
+  id: ID! @id
+  first: String!
+  last: String!
+  mobile: String
+  email: String
+}
+
+type Owner implements Individual {
+  id: ID! @id
+  first: String!
+  last: String!
+  mobile: String
+  phone: String
+  email: String
+  street: String
+  city: String
+  state: String
+  zip: Int
+  company: String
+  title: String
+  occupation: String
+  income: String
+  fico: String
+  bdda: Boolean
+  wfa2MM: Boolean
+  referredBy: [Coi]
+}
+
+type Coi implements Individual {
+  id: ID! @id
+  first: String!
+  last: String!
+  mobile: String
+  phone: String
+  email: String
+  street: String
+  city: String
+  state: String
+  zip: Int
+  company: String
+  title: String
+}
+
+type Partner implements Individual {
+  id: ID! @id
+  first: String!
+  last: String!
+  mobile: String
+  phone: String
+  email: String
+  street: String
+  city: String
+  state: String
+  zip: Int
+  company: String
+  title: [Wellstitle] @scalarList(strategy: RELATION)
+  department: [Dept] @scalarList(strategy: RELATION)
+}
+
+enum Dept {
+  SBA
+  PRACTICE
+  BREF
+}
+
+enum Wellstitle {
+  RM
+  BRS
+  SBABDO
+}
+
+input Loginput {
+  id: ID! @id
+  contact: [Owner]!
+  partner: [Partner]
+  time: Date!
+  log: String!
+}
+
+type Business {
+  id: ID! @id
+  bizname: String!
+  industry: String
+  owners: [Owner]
+  street: String
+  city: String
+  state: String
+  zip: Int
+  revenue: Int
+  ownersPercentage: Int
+  bdda: Boolean
+  managed: Boolean
+  managedBy: [Partner]
+  extClientSumQ1: String
+  extClientSumQ2: String
+  extClientSumQ3: String
+  extClientSumQ4: String
+
+}
