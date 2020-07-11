@@ -24,7 +24,7 @@ const UPDATE_PERMISSIONS_MUTATION = gql`
             email
         }
     }
-    `;
+ `;
 
 const ALL_USERS_QUERY = gql`
     query {
@@ -39,8 +39,7 @@ const ALL_USERS_QUERY = gql`
 
 const Permissions = props => (
     <Query query={ALL_USERS_QUERY}>
-        {({ data, loading, error }) => 
-        console.log(data) || (
+        {({ data, loading, error }) => (
             <div>
               <Error error={error} />
               <div>
@@ -100,7 +99,7 @@ class UserPermissions extends React.Component {
               }}
             >
             {(updatePermissions, { loading, error }) => (
-               <> 
+            <> 
                {error && <tr><td colspan="8"><Error error={error} /></td></tr>}
                 <tr>
                     <td>{user.name}</td>
@@ -127,8 +126,9 @@ class UserPermissions extends React.Component {
                     </SickButton>
                  </td>
                 </tr>
-                </>
-            )}
+            </>
+            )
+            }
             </Mutation>
         );
     }

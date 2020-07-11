@@ -20,10 +20,10 @@ const Table = styled.table`
         width: 100%;
       }
     }
-  }
-  label {
-    padding: 5px 5px;
-    display: block;
+    label {
+      padding: 10px 5px;
+      display: block;
+    }
   }
   tr {
     &:hover {
